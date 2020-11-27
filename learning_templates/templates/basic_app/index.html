@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% block body_block %}
+    {% load my_extras %}
+    <h1>Welcome to Index</h1>
+    <h2>Template Index</h2>
+    <h1>{{ text|lower }}</h1>
+    <h1>{{ number|sub:"2" }}</h1>
+{% endblock %}
